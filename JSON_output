@@ -1,0 +1,4863 @@
+https://api.aci.avaya.com/v1/call/{call_ID}?scope=annotations
+
+{
+    "attributes": [
+        {
+            "id": "sentinel_risk_score",
+            "type": "number",
+            "value": 250
+        }
+    ],
+    "attributes_history": {
+        "sentinel_risk_score": [
+            {
+                "id": "sentinel_risk_score",
+                "modifier_type": "increment_call_attribute",
+                "modifier_value": 100,
+                "rule_id": [
+                    49,
+                    10605,
+                    3
+                ],
+                "type": "number",
+                "value": 100
+            },
+            {
+                "id": "sentinel_risk_score",
+                "modifier_type": "increment_call_attribute",
+                "modifier_value": 100,
+                "rule_id": [
+                    49,
+                    10605,
+                    3
+                ],
+                "type": "number",
+                "value": 200
+            },
+            {
+                "id": "sentinel_risk_score",
+                "modifier_type": "increment_call_attribute",
+                "modifier_value": -150,
+                "rule_id": [
+                    49,
+                    15702,
+                    2
+                ],
+                "type": "number",
+                "value": 50
+            },
+            {
+                "id": "sentinel_risk_score",
+                "modifier_type": "increment_call_attribute",
+                "modifier_value": 100,
+                "rule_id": [
+                    49,
+                    4405,
+                    11
+                ],
+                "type": "number",
+                "value": 150
+            },
+            {
+                "id": "sentinel_risk_score",
+                "modifier_type": "increment_call_attribute",
+                "modifier_value": 100,
+                "rule_id": [
+                    49,
+                    5164,
+                    4
+                ],
+                "type": "number",
+                "value": 250
+            },
+            {
+                "id": "sentinel_risk_score",
+                "modifier_type": "increment_call_attribute",
+                "modifier_value": 200,
+                "rule_id": [
+                    49,
+                    11672,
+                    5
+                ],
+                "type": "number",
+                "value": 450
+            },
+            {
+                "id": "sentinel_risk_score",
+                "modifier_type": "increment_call_attribute",
+                "modifier_value": 100,
+                "rule_id": [
+                    49,
+                    10463,
+                    3
+                ],
+                "type": "number",
+                "value": 550
+            },
+            {
+                "id": "sentinel_risk_score",
+                "modifier_type": "increment_call_attribute",
+                "modifier_value": -300,
+                "rule_id": [
+                    49,
+                    5191,
+                    10
+                ],
+                "type": "number",
+                "value": 250
+            }
+        ]
+    },
+    "conversations": [
+        {
+            "end_offset": 117.0,
+            "id": 94080927741820,
+            "participants": [
+                {
+                    "channel_id": 0,
+                    "participant_id": 9303
+                },
+                {
+                    "channel_id": 1,
+                    "participant_id": 0
+                }
+            ],
+            "project_ids": [
+                64
+            ],
+            "start_offset": 0.0,
+            "tags": [
+                "Default",
+                "recording:tesla/call-1"
+            ]
+        }
+    ],
+    "ended_at": 1634074518.8770000935,
+    "entities": [
+        {
+            "dimension_name": "brand",
+            "display_name": {
+                "exact": "Beyond Health",
+                "approximate": null
+            },
+            "id": 0,
+            "type": "user_defined",
+            "value": {
+                "type": "user_defined",
+                "format": "plain",
+                "value": {
+                    "value": "Beyond Health"
+                }
+            },
+            "word_ids": [
+                1000000022690006,
+                1000000022690007
+            ]
+        },
+        {
+            "dimension_name": "system.duration",
+            "display_name": {
+                "exact": "1 day",
+                "approximate": null
+            },
+            "id": 1,
+            "type": "duration",
+            "value": {
+                "value": {
+                    "months": 0,
+                    "seconds": 0,
+                    "minutes": 0,
+                    "hours": 0,
+                    "weeks": 0,
+                    "years": 0,
+                    "days": 1
+                },
+                "format": "plain",
+                "type": "duration"
+            },
+            "word_ids": [
+                1000000364200014,
+                1000000364200015
+            ]
+        },
+        {
+            "dimension_name": "system.number",
+            "display_name": {
+                "exact": "123456",
+                "approximate": null
+            },
+            "id": 2,
+            "type": "number",
+            "value": {
+                "value": {
+                    "value": "123456"
+                },
+                "format": "plain",
+                "type": "number"
+            },
+            "word_ids": [
+                1010000218400004,
+                1010000218400005,
+                1010000218400006,
+                1010000218400007,
+                1010000218400008,
+                1010000218400009
+            ]
+        }
+    ],
+    "finished": true,
+    "id": "5-9d1f8447d59a4cc182",
+    "inbound": true,
+    "intents": [
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Call Opening",
+            "entity_ids": [
+                0
+            ],
+            "id": 100028,
+            "participant_id": 9303,
+            "text_snippet": "hello thank you for calling be on health is this a new or",
+            "word_ids": [
+                1000000022690001,
+                1000000022690002,
+                1000000022690003,
+                1000000022690004,
+                1000000022690006,
+                1000000022690007
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Question: Claim",
+            "entity_ids": [],
+            "id": 100643,
+            "participant_id": 9303,
+            "text_snippet": "on health is this a new or existing claim hold on a second is",
+            "word_ids": [
+                1000000022690011,
+                1000000022690012,
+                1000000022690013,
+                1000000022690014
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Buying Time",
+            "entity_ids": [],
+            "id": 100102,
+            "participant_id": 9303,
+            "text_snippet": "a new or existing claim hold on a second is this any better and",
+            "word_ids": [
+                1000000103100000,
+                1000000103100002,
+                1000000103100003
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Question: Case Number",
+            "entity_ids": [],
+            "id": 100602,
+            "participant_id": 9303,
+            "text_snippet": "this any better and i asked for your case number am i speaking with mr",
+            "word_ids": [
+                1000000187790002,
+                1000000187790003,
+                1000000187790004,
+                1000000187790005,
+                1000000187790006
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Name Verification",
+            "entity_ids": [],
+            "id": 100089,
+            "participant_id": 9303,
+            "text_snippet": "asked for your case number am i speaking with mr smith okay i found your",
+            "word_ids": [
+                1000000276000000,
+                1000000276000001,
+                1000000276000002,
+                1000000276000003,
+                1000000276000004
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Prescription",
+            "entity_ids": [],
+            "id": 100621,
+            "participant_id": 9303,
+            "text_snippet": "see that you are currently taking a prescription can you confirm the medication",
+            "word_ids": [
+                1000000318120011,
+                1000000318120013
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Antagonism",
+            "entity_ids": [],
+            "id": 100252,
+            "participant_id": 9303,
+            "text_snippet": "prescribed by a doctor what are you crazy you can't just stop taking",
+            "word_ids": [
+                1000000565800001,
+                1000000565800002,
+                1000000565800003
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Transfer: @DEPARTMENT",
+            "entity_ids": [],
+            "id": 7,
+            "participant_id": 9303,
+            "text_snippet": "to talk to a doctor i will transfer you now i'm sorry there are",
+            "word_ids": [
+                1000000662620007,
+                1000000662620008,
+                1000000662620009,
+                1000000662620010
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Empathy",
+            "entity_ids": [],
+            "id": 2,
+            "participant_id": 9303,
+            "text_snippet": "i will transfer you now i'm sorry there are no supervisors available",
+            "word_ids": [
+                1000000762490000,
+                1000000762490001
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Supervisor Unavailable",
+            "entity_ids": [],
+            "id": 100519,
+            "participant_id": 9303,
+            "text_snippet": "transfer you now i'm sorry there are no supervisors available due to the virus hi",
+            "word_ids": [
+                1000000762490002,
+                1000000762490003,
+                1000000762490004,
+                1000000762490005,
+                1000000762490006
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "COVID-19",
+            "entity_ids": [],
+            "id": 100714,
+            "participant_id": 9303,
+            "text_snippet": "supervisors available due to the virus hi mr jones i'm the",
+            "word_ids": [
+                1000000762490010
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Auditory Comprehension Issue",
+            "entity_ids": [],
+            "id": 100230,
+            "participant_id": 0,
+            "text_snippet": "i can barely hear you can you speak up yes",
+            "word_ids": [
+                1010000067560000,
+                1010000067560002,
+                1010000067560003,
+                1010000067560004
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Auditory Comprehension Issue",
+            "entity_ids": [],
+            "id": 100230,
+            "participant_id": 0,
+            "text_snippet": "i can barely hear you can you speak up yes that's much better thank",
+            "word_ids": [
+                1010000067560005,
+                1010000067560006,
+                1010000067560007,
+                1010000067560008
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Gratitude",
+            "entity_ids": [],
+            "id": 100001,
+            "participant_id": 0,
+            "text_snippet": "can you speak up yes that's much better thank you my case number",
+            "word_ids": [
+                1010000152520001,
+                1010000152520002,
+                1010000152520003
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Case Number",
+            "entity_ids": [
+                2
+            ],
+            "id": 100544,
+            "participant_id": 0,
+            "text_snippet": "much better thank you my case number is one two three four five six yes sure i'm taking a",
+            "word_ids": [
+                1010000218400001,
+                1010000218400002,
+                1010000218400004,
+                1010000218400005,
+                1010000218400006,
+                1010000218400007,
+                1010000218400008,
+                1010000218400009
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Off Medication",
+            "entity_ids": [],
+            "id": 100619,
+            "participant_id": 0,
+            "text_snippet": "taking a prescription of millennium i stopped taking it a couple of days ago",
+            "word_ids": [
+                1010000461760000,
+                1010000461760001,
+                1010000461760002,
+                1010000461760003
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Symptoms",
+            "entity_ids": [],
+            "id": 100620,
+            "participant_id": 0,
+            "text_snippet": "it was making me ancient i'm feeling really tired and depressed and i think i have",
+            "word_ids": [
+                1010000501370000,
+                1010000501370001,
+                1010000501370002,
+                1010000501370003,
+                1010000501370004,
+                1010000501370005
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Side Effects",
+            "entity_ids": [],
+            "id": 100618,
+            "participant_id": 0,
+            "text_snippet": "a fever i know but i just didn't feel like myself what do you think i",
+            "word_ids": [
+                1010000614730003,
+                1010000614730005,
+                1010000614730006,
+                1010000614730007,
+                1010000614730008
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Help Request",
+            "entity_ids": [],
+            "id": 100106,
+            "participant_id": 0,
+            "text_snippet": "just didn't feel like myself what do you think i should do how is this related to",
+            "word_ids": [
+                1010000643550000,
+                1010000643550001,
+                1010000643550002,
+                1010000643550003,
+                1010000643550004,
+                1010000643550005,
+                1010000643550006
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Supervisor Escalation",
+            "entity_ids": [],
+            "id": 100025,
+            "participant_id": 0,
+            "text_snippet": "insurance claim maybe i should speak to a supervisor can you please have someone",
+            "word_ids": [
+                1010000701120011,
+                1010000701120012,
+                1010000701120014
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Callback Scheduling",
+            "entity_ids": [],
+            "id": 100011,
+            "participant_id": 0,
+            "text_snippet": "to a supervisor can you please have someone call me back as soon as possible fantastic",
+            "word_ids": [
+                1010000812400002,
+                1010000812400005,
+                1010000812400006,
+                1010000812400007
+            ]
+        },
+        {
+            "conversation_id": 94080927741820,
+            "display_name": "Customer Service Appreciation",
+            "entity_ids": [],
+            "id": 100310,
+            "participant_id": 0,
+            "text_snippet": "soon as possible fantastic truly outstanding customer service all right cool thanks bye",
+            "word_ids": [
+                1010001008170001,
+                1010001008170002,
+                1010001008170003
+            ]
+        }
+    ],
+    "language_id": "en-US",
+    "notes": [
+        {
+            "description": "Personal Agent: <br /><br /><a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Depression\">Depression</a> <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Fever\">Fever</a>",
+            "id": "note123456",
+            "title": "Personal agent",
+            "url": null,
+            "word_ids": [
+                1010000461760000,
+                1010000461760001,
+                1010000461760002,
+                1010000461760003
+            ]
+        }
+    ],
+    "participants": [
+        {
+            "id": 9303,
+            "type": "agent",
+            "username": "ACIDemoT1"
+        },
+        {
+            "id": 0,
+            "phone_number": "+5551212",
+            "type": "customer"
+        }
+    ],
+    "projects": [
+        {
+            "id": 64,
+            "name": "Default project"
+        }
+    ],
+    "recordings": null,
+    "rules": [
+        {
+            "color": "#9900ef",
+            "id": "49-10605-3",
+            "name": "Customer Can't Hear",
+            "timestamp": 1634074409677,
+            "type": "if_something"
+        },
+        {
+            "color": "#9900ef",
+            "id": "49-10605-3",
+            "name": "Customer Can't Hear",
+            "timestamp": 1634074410505,
+            "type": "if_something"
+        },
+        {
+            "color": "#00D084",
+            "id": "49-15702-2",
+            "name": "Gratitude",
+            "timestamp": 1634074418281,
+            "type": "if_something"
+        },
+        {
+            "color": "#9900ef",
+            "id": "49-4405-11",
+            "name": "Forgot Recording Disclaimer",
+            "timestamp": 1634074401877,
+            "type": "if_something_not_followed_by_something_else_within_time"
+        },
+        {
+            "color": "#eb144c",
+            "id": "49-5164-4",
+            "name": "Off Medication",
+            "timestamp": 1634074448881,
+            "type": "if_something"
+        },
+        {
+            "color": "#eb144c",
+            "id": "49-11672-5",
+            "name": "Agent Anger",
+            "timestamp": 1634074459500,
+            "type": "if_something"
+        },
+        {
+            "color": "#F78DA7",
+            "id": "49-10463-3",
+            "name": "Supervisor Escalation",
+            "timestamp": 1634074476349,
+            "type": "if_something"
+        },
+        {
+            "color": "#00d084",
+            "id": "49-5191-10",
+            "name": "Agreement",
+            "timestamp": 1634074505005,
+            "type": "if_something"
+        }
+    ],
+    "started_at": 1634074401.8770000935,
+    "summary": {
+        "94080927741820": {
+            "0": [
+                {
+                    "intent_annotation": {
+                        "example_id": 10625,
+                        "rescored_words": [],
+                        "used_slop": 0,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100643
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100643
+                        },
+                        "word_keys": [
+                            1000000022690011,
+                            1000000022690012,
+                            1000000022690013,
+                            1000000022690014
+                        ]
+                    },
+                    "summary_snippet": "asked about the insurance claim",
+                    "start_at": 1634074406257,
+                    "end_at": 1634074407445,
+                    "is_last_in_turn": false
+                },
+                {
+                    "intent_annotation": {
+                        "example_id": 14889,
+                        "rescored_words": [],
+                        "used_slop": 0,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100602
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100602
+                        },
+                        "word_keys": [
+                            1000000187790002,
+                            1000000187790003,
+                            1000000187790004,
+                            1000000187790005,
+                            1000000187790006
+                        ]
+                    },
+                    "summary_snippet": " and for the case number.",
+                    "start_at": 1634074420909,
+                    "end_at": 1634074422061,
+                    "is_last_in_turn": false
+                },
+                {
+                    "intent_annotation": {
+                        "example_id": 9524,
+                        "rescored_words": [],
+                        "used_slop": 1,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100621
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100621
+                        },
+                        "word_keys": [
+                            1000000318120011,
+                            1000000318120013
+                        ]
+                    },
+                    "summary_snippet": "mentioned the prescription.",
+                    "start_at": 1634074436461,
+                    "end_at": 1634074437685,
+                    "is_last_in_turn": false
+                },
+                {
+                    "intent_annotation": {
+                        "example_id": 1496,
+                        "rescored_words": [],
+                        "used_slop": 0,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 7
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 7
+                        },
+                        "word_keys": [
+                            1000000662620007,
+                            1000000662620008,
+                            1000000662620009,
+                            1000000662620010
+                        ]
+                    },
+                    "summary_snippet": "transferred the call.",
+                    "start_at": 1634074469725,
+                    "end_at": 1634074470589,
+                    "is_last_in_turn": false
+                },
+                {
+                    "intent_annotation": {
+                        "example_id": 6189,
+                        "rescored_words": [],
+                        "used_slop": 0,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100519
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100519
+                        },
+                        "word_keys": [
+                            1000000762490002,
+                            1000000762490003,
+                            1000000762490004,
+                            1000000762490005,
+                            1000000762490006
+                        ]
+                    },
+                    "summary_snippet": "said the supervisor was unavailable",
+                    "start_at": 1634074478725,
+                    "end_at": 1634074480273,
+                    "is_last_in_turn": false
+                },
+                {
+                    "intent_annotation": {
+                        "example_id": 10973,
+                        "rescored_words": [],
+                        "used_slop": 0,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100714
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100714
+                        },
+                        "word_keys": [
+                            1000000762490010
+                        ]
+                    },
+                    "summary_snippet": " and mentioned COVID-19.",
+                    "start_at": 1634074480597,
+                    "end_at": 1634074481137,
+                    "is_last_in_turn": true
+                }
+            ],
+            "1": [
+                {
+                    "intent_annotation": {
+                        "example_id": 9517,
+                        "rescored_words": [],
+                        "used_slop": 0,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100619
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100619
+                        },
+                        "word_keys": [
+                            1010000461760000,
+                            1010000461760001,
+                            1010000461760002,
+                            1010000461760003
+                        ]
+                    },
+                    "summary_snippet": "said they were off medication",
+                    "start_at": 1634074448053,
+                    "end_at": 1634074448881,
+                    "is_last_in_turn": false
+                },
+                {
+                    "intent_annotation": {
+                        "example_id": 9527,
+                        "rescored_words": [],
+                        "used_slop": 0,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100620
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100620
+                        },
+                        "word_keys": [
+                            1010000501370000,
+                            1010000501370001,
+                            1010000501370002,
+                            1010000501370003,
+                            1010000501370004,
+                            1010000501370005
+                        ]
+                    },
+                    "summary_snippet": ", was tired and depressed",
+                    "start_at": 1634074452014,
+                    "end_at": 1634074453741,
+                    "is_last_in_turn": false
+                },
+                {
+                    "intent_annotation": {
+                        "example_id": 9514,
+                        "rescored_words": [],
+                        "used_slop": 1,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100618
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100618
+                        },
+                        "word_keys": [
+                            1010000614730003,
+                            1010000614730005,
+                            1010000614730006,
+                            1010000614730007,
+                            1010000614730008
+                        ]
+                    },
+                    "summary_snippet": ", said they felt off",
+                    "start_at": 1634074464274,
+                    "end_at": 1634074465621,
+                    "is_last_in_turn": false
+                },
+                {
+                    "intent_annotation": {
+                        "example_id": 9512,
+                        "rescored_words": [],
+                        "used_slop": 0,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100106
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100106
+                        },
+                        "word_keys": [
+                            1010000643550000,
+                            1010000643550001,
+                            1010000643550002,
+                            1010000643550003,
+                            1010000643550004,
+                            1010000643550005,
+                            1010000643550006
+                        ]
+                    },
+                    "summary_snippet": " and asked for help.",
+                    "start_at": 1634074466232,
+                    "end_at": 1634074467205,
+                    "is_last_in_turn": false
+                },
+                {
+                    "intent_annotation": {
+                        "example_id": 906,
+                        "rescored_words": [],
+                        "used_slop": 1,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100025
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100025
+                        },
+                        "word_keys": [
+                            1010000701120011,
+                            1010000701120012,
+                            1010000701120014
+                        ]
+                    },
+                    "summary_snippet": "wanted to talk with the agent's supervisor.",
+                    "start_at": 1634074475089,
+                    "end_at": 1634074476349,
+                    "is_last_in_turn": false
+                },
+                {
+                    "intent_annotation": {
+                        "example_id": 425,
+                        "rescored_words": [],
+                        "used_slop": 2,
+                        "is_false_positive": false,
+                        "annotated": {
+                            "id": 100011
+                        },
+                        "entities": [],
+                        "intent": {
+                            "id": 100011
+                        },
+                        "word_keys": [
+                            1010000812400002,
+                            1010000812400005,
+                            1010000812400006,
+                            1010000812400007
+                        ]
+                    },
+                    "summary_snippet": "requested a callback.",
+                    "start_at": 1634074483405,
+                    "end_at": 1634074484737,
+                    "is_last_in_turn": true
+                }
+            ]
+        }
+    },
+    "transcript": {
+        "readability_turns": [
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 5.568,
+                "participant_id": 9303,
+                "start_offset": 2.269,
+                "text": "Hello, Thank you for calling be Beyond Health, is this a new or existing claim.",
+                "words": [
+                    {
+                        "end_offset": 2.514,
+                        "id": 1000000022690000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 2.269,
+                        "text": "hello"
+                    },
+                    {
+                        "end_offset": 2.796,
+                        "id": 1000000022690001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 2.544,
+                        "text": "thank"
+                    },
+                    {
+                        "end_offset": 2.868,
+                        "id": 1000000022690002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 2.796,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 2.94,
+                        "id": 1000000022690003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 2.868,
+                        "text": "for"
+                    },
+                    {
+                        "end_offset": 3.372,
+                        "id": 1000000022690004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 3.012,
+                        "text": "calling"
+                    },
+                    {
+                        "end_offset": 3.499,
+                        "id": 1000000022690005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 3.372,
+                        "text": "be"
+                    },
+                    {
+                        "end_offset": 3.696,
+                        "id": 1000000022690006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 3.499,
+                        "text": "beyond"
+                    },
+                    {
+                        "end_offset": 3.948,
+                        "id": 1000000022690007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 3.696,
+                        "text": "health"
+                    },
+                    {
+                        "end_offset": 4.128,
+                        "id": 1000000022690008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 3.984,
+                        "text": "is"
+                    },
+                    {
+                        "end_offset": 4.308,
+                        "id": 1000000022690009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 4.128,
+                        "text": "this"
+                    },
+                    {
+                        "end_offset": 4.38,
+                        "id": 1000000022690010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 4.308,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 4.631,
+                        "id": 1000000022690011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 4.38,
+                        "text": "new"
+                    },
+                    {
+                        "end_offset": 4.74,
+                        "id": 1000000022690012,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 4.631,
+                        "text": "or"
+                    },
+                    {
+                        "end_offset": 5.208,
+                        "id": 1000000022690013,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 4.74,
+                        "text": "existing"
+                    },
+                    {
+                        "end_offset": 5.568,
+                        "id": 1000000022690014,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 5.208,
+                        "text": "claim"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 8.628,
+                "participant_id": 0,
+                "start_offset": 6.756,
+                "text": "I can barely hear you. Can you speak up?",
+                "words": [
+                    {
+                        "end_offset": 6.864,
+                        "id": 1010000067560000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 6.756,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 7.044,
+                        "id": 1010000067560001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 6.864,
+                        "text": "can"
+                    },
+                    {
+                        "end_offset": 7.368,
+                        "id": 1010000067560002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 7.044,
+                        "text": "barely"
+                    },
+                    {
+                        "end_offset": 7.584,
+                        "id": 1010000067560003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 7.368,
+                        "text": "hear"
+                    },
+                    {
+                        "end_offset": 7.8,
+                        "id": 1010000067560004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 7.584,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 8.052,
+                        "id": 1010000067560005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 7.836,
+                        "text": "can"
+                    },
+                    {
+                        "end_offset": 8.16,
+                        "id": 1010000067560006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 8.052,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 8.484,
+                        "id": 1010000067560007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 8.16,
+                        "text": "speak"
+                    },
+                    {
+                        "end_offset": 8.628,
+                        "id": 1010000067560008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 8.484,
+                        "text": "up"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 14.1,
+                "participant_id": 9303,
+                "start_offset": 10.31,
+                "text": "Hold on a second. Is this any better?",
+                "words": [
+                    {
+                        "end_offset": 10.583,
+                        "id": 1000000103100000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 10.31,
+                        "text": "hold"
+                    },
+                    {
+                        "end_offset": 10.718,
+                        "id": 1000000103100001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 10.594,
+                        "text": "on"
+                    },
+                    {
+                        "end_offset": 10.753,
+                        "id": 1000000103100002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 10.718,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 11.112,
+                        "id": 1000000103100003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 10.753,
+                        "text": "second"
+                    },
+                    {
+                        "end_offset": 13.416,
+                        "id": 1000000132720000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 13.272,
+                        "text": "is"
+                    },
+                    {
+                        "end_offset": 13.595,
+                        "id": 1000000132720001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 13.416,
+                        "text": "this"
+                    },
+                    {
+                        "end_offset": 13.776,
+                        "id": 1000000132720002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 13.596,
+                        "text": "any"
+                    },
+                    {
+                        "end_offset": 14.1,
+                        "id": 1000000132720003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 13.776,
+                        "text": "better"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 16.908,
+                "participant_id": 0,
+                "start_offset": 15.252,
+                "text": "Yes, that's much better. Thank you.",
+                "words": [
+                    {
+                        "end_offset": 15.54,
+                        "id": 1010000152520000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 15.252,
+                        "text": "yes"
+                    },
+                    {
+                        "end_offset": 15.719,
+                        "id": 1010000152520001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 15.54,
+                        "text": "that's"
+                    },
+                    {
+                        "end_offset": 15.972,
+                        "id": 1010000152520002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 15.72,
+                        "text": "much"
+                    },
+                    {
+                        "end_offset": 16.404,
+                        "id": 1010000152520003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 15.972,
+                        "text": "better"
+                    },
+                    {
+                        "end_offset": 16.728,
+                        "id": 1010000152520004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 16.476,
+                        "text": "thank"
+                    },
+                    {
+                        "end_offset": 16.908,
+                        "id": 1010000152520005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 16.728,
+                        "text": "you"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 20.184,
+                "participant_id": 9303,
+                "start_offset": 18.779,
+                "text": "And I asked for your case number?",
+                "words": [
+                    {
+                        "end_offset": 18.922,
+                        "id": 1000000187790000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 18.779,
+                        "text": "and"
+                    },
+                    {
+                        "end_offset": 19.032,
+                        "id": 1000000187790001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 18.923,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 19.338,
+                        "id": 1000000187790002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 19.032,
+                        "text": "asked"
+                    },
+                    {
+                        "end_offset": 19.428,
+                        "id": 1000000187790003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 19.338,
+                        "text": "for"
+                    },
+                    {
+                        "end_offset": 19.572,
+                        "id": 1000000187790004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 19.428,
+                        "text": "your"
+                    },
+                    {
+                        "end_offset": 19.824,
+                        "id": 1000000187790005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 19.572,
+                        "text": "case"
+                    },
+                    {
+                        "end_offset": 20.184,
+                        "id": 1000000187790006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 19.824,
+                        "text": "number"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 25.296,
+                "participant_id": 0,
+                "start_offset": 21.84,
+                "text": "My case number is 123456.",
+                "words": [
+                    {
+                        "end_offset": 22.056,
+                        "id": 1010000218400000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 21.84,
+                        "text": "my"
+                    },
+                    {
+                        "end_offset": 22.308,
+                        "id": 1010000218400001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 22.056,
+                        "text": "case"
+                    },
+                    {
+                        "end_offset": 22.668,
+                        "id": 1010000218400002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 22.308,
+                        "text": "number"
+                    },
+                    {
+                        "end_offset": 22.992,
+                        "id": 1010000218400003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 22.668,
+                        "text": "is"
+                    },
+                    {
+                        "end_offset": 23.388,
+                        "id": 1010000218400004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 23.028,
+                        "text": "one"
+                    },
+                    {
+                        "end_offset": 23.604,
+                        "id": 1010000218400005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 23.388,
+                        "text": "two"
+                    },
+                    {
+                        "end_offset": 24.072,
+                        "id": 1010000218400006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 23.604,
+                        "text": "three"
+                    },
+                    {
+                        "end_offset": 24.575,
+                        "id": 1010000218400007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 24.288,
+                        "text": "four"
+                    },
+                    {
+                        "end_offset": 24.828,
+                        "id": 1010000218400008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 24.576,
+                        "text": "five"
+                    },
+                    {
+                        "end_offset": 25.296,
+                        "id": 1010000218400009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 24.828,
+                        "text": "six"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 41.388,
+                "participant_id": 9303,
+                "start_offset": 27.6,
+                "text": "Am I speaking with Mr Smith? (Yes.) Okay, I found your case. I see that you are currently taking a prescription, can you confirm the medication for me and that you've been taking it twice a as prescribed by a doctor.",
+                "words": [
+                    {
+                        "end_offset": 27.816,
+                        "id": 1000000276000000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 27.6,
+                        "text": "am"
+                    },
+                    {
+                        "end_offset": 27.96,
+                        "id": 1000000276000001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 27.816,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 28.32,
+                        "id": 1000000276000002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 27.96,
+                        "text": "speaking"
+                    },
+                    {
+                        "end_offset": 28.464,
+                        "id": 1000000276000003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 28.32,
+                        "text": "with"
+                    },
+                    {
+                        "end_offset": 28.788,
+                        "id": 1000000276000004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 28.464,
+                        "text": "mr"
+                    },
+                    {
+                        "end_offset": 29.076,
+                        "id": 1000000276000005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 28.788,
+                        "text": "smith"
+                    },
+                    {
+                        "end_offset": 30.48,
+                        "id": 1010000298320000,
+                        "is_backchannel": true,
+                        "is_redacted": false,
+                        "start_offset": 29.832,
+                        "text": "yes"
+                    },
+                    {
+                        "end_offset": 32.244,
+                        "id": 1000000318120000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 31.812,
+                        "text": "okay"
+                    },
+                    {
+                        "end_offset": 32.28,
+                        "id": 1000000318120001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 32.244,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 32.567,
+                        "id": 1000000318120002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 32.28,
+                        "text": "found"
+                    },
+                    {
+                        "end_offset": 32.671,
+                        "id": 1000000318120003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 32.567,
+                        "text": "your"
+                    },
+                    {
+                        "end_offset": 33.036,
+                        "id": 1000000318120004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 32.671,
+                        "text": "case"
+                    },
+                    {
+                        "end_offset": 33.504,
+                        "id": 1000000318120005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 33.36,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 33.756,
+                        "id": 1000000318120006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 33.504,
+                        "text": "see"
+                    },
+                    {
+                        "end_offset": 33.936,
+                        "id": 1000000318120007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 33.756,
+                        "text": "that"
+                    },
+                    {
+                        "end_offset": 34.039,
+                        "id": 1000000318120008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 33.936,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 34.152,
+                        "id": 1000000318120009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 34.039,
+                        "text": "are"
+                    },
+                    {
+                        "end_offset": 34.584,
+                        "id": 1000000318120010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 34.152,
+                        "text": "currently"
+                    },
+                    {
+                        "end_offset": 35.017,
+                        "id": 1000000318120011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 34.584,
+                        "text": "taking"
+                    },
+                    {
+                        "end_offset": 35.086,
+                        "id": 1000000318120012,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 35.017,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 35.808,
+                        "id": 1000000318120013,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 35.088,
+                        "text": "prescription"
+                    },
+                    {
+                        "end_offset": 36.6,
+                        "id": 1000000364200000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 36.42,
+                        "text": "can"
+                    },
+                    {
+                        "end_offset": 36.672,
+                        "id": 1000000364200001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 36.6,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 37.215,
+                        "id": 1000000364200002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 36.672,
+                        "text": "confirm"
+                    },
+                    {
+                        "end_offset": 37.32,
+                        "id": 1000000364200003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 37.215,
+                        "text": "the"
+                    },
+                    {
+                        "end_offset": 37.968,
+                        "id": 1000000364200004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 37.32,
+                        "text": "medication"
+                    },
+                    {
+                        "end_offset": 38.112,
+                        "id": 1000000364200005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 37.968,
+                        "text": "for"
+                    },
+                    {
+                        "end_offset": 38.364,
+                        "id": 1000000364200006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 38.112,
+                        "text": "me"
+                    },
+                    {
+                        "end_offset": 38.576,
+                        "id": 1000000364200007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 38.364,
+                        "text": "and"
+                    },
+                    {
+                        "end_offset": 38.688,
+                        "id": 1000000364200008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 38.576,
+                        "text": "that"
+                    },
+                    {
+                        "end_offset": 38.796,
+                        "id": 1000000364200009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 38.688,
+                        "text": "you've"
+                    },
+                    {
+                        "end_offset": 38.94,
+                        "id": 1000000364200010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 38.796,
+                        "text": "been"
+                    },
+                    {
+                        "end_offset": 39.3,
+                        "id": 1000000364200011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 38.94,
+                        "text": "taking"
+                    },
+                    {
+                        "end_offset": 39.443,
+                        "id": 1000000364200012,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 39.3,
+                        "text": "it"
+                    },
+                    {
+                        "end_offset": 39.768,
+                        "id": 1000000364200013,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 39.443,
+                        "text": "twice"
+                    },
+                    {
+                        "end_offset": 39.889,
+                        "id": 1000000364200014,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 39.812,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 40.092,
+                        "id": 1000000364200015,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 39.889,
+                        "text": "day"
+                    },
+                    {
+                        "end_offset": 40.272,
+                        "id": 1000000364200016,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 40.092,
+                        "text": "as"
+                    },
+                    {
+                        "end_offset": 40.776,
+                        "id": 1000000364200017,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 40.308,
+                        "text": "prescribed"
+                    },
+                    {
+                        "end_offset": 40.908,
+                        "id": 1000000364200018,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 40.776,
+                        "text": "by"
+                    },
+                    {
+                        "end_offset": 40.963,
+                        "id": 1000000364200019,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 40.908,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 41.388,
+                        "id": 1000000364200020,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 40.967,
+                        "text": "doctor"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 53.376,
+                "participant_id": 0,
+                "start_offset": 42.756,
+                "text": "Sure. I'm taking a prescription of millennium. I stopped taking it a couple of days ago because it was making me ancient. I'm feeling really tired and depressed and I think I have a fever.",
+                "words": [
+                    {
+                        "end_offset": 43.152,
+                        "id": 1010000427560000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 42.756,
+                        "text": "sure"
+                    },
+                    {
+                        "end_offset": 43.901,
+                        "id": 1010000437600000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 43.76,
+                        "text": "i'm"
+                    },
+                    {
+                        "end_offset": 44.232,
+                        "id": 1010000437600001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 43.906,
+                        "text": "taking"
+                    },
+                    {
+                        "end_offset": 44.304,
+                        "id": 1010000437600002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 44.232,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 44.844,
+                        "id": 1010000437600003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 44.304,
+                        "text": "prescription"
+                    },
+                    {
+                        "end_offset": 44.952,
+                        "id": 1010000437600004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 44.844,
+                        "text": "of"
+                    },
+                    {
+                        "end_offset": 45.6,
+                        "id": 1010000437600005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 44.952,
+                        "text": "millennium"
+                    },
+                    {
+                        "end_offset": 46.32,
+                        "id": 1010000461760000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 46.176,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 46.608,
+                        "id": 1010000461760001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 46.32,
+                        "text": "stopped"
+                    },
+                    {
+                        "end_offset": 46.896,
+                        "id": 1010000461760002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 46.608,
+                        "text": "taking"
+                    },
+                    {
+                        "end_offset": 47.004,
+                        "id": 1010000461760003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 46.896,
+                        "text": "it"
+                    },
+                    {
+                        "end_offset": 47.04,
+                        "id": 1010000461760004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 47.004,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 47.292,
+                        "id": 1010000461760005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 47.04,
+                        "text": "couple"
+                    },
+                    {
+                        "end_offset": 47.364,
+                        "id": 1010000461760006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 47.292,
+                        "text": "of"
+                    },
+                    {
+                        "end_offset": 47.58,
+                        "id": 1010000461760007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 47.364,
+                        "text": "days"
+                    },
+                    {
+                        "end_offset": 47.832,
+                        "id": 1010000461760008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 47.58,
+                        "text": "ago"
+                    },
+                    {
+                        "end_offset": 48.192,
+                        "id": 1010000461760009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 47.832,
+                        "text": "because"
+                    },
+                    {
+                        "end_offset": 48.264,
+                        "id": 1010000461760010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 48.192,
+                        "text": "it"
+                    },
+                    {
+                        "end_offset": 48.408,
+                        "id": 1010000461760011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 48.264,
+                        "text": "was"
+                    },
+                    {
+                        "end_offset": 48.706,
+                        "id": 1010000461760012,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 48.408,
+                        "text": "making"
+                    },
+                    {
+                        "end_offset": 48.84,
+                        "id": 1010000461760013,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 48.706,
+                        "text": "me"
+                    },
+                    {
+                        "end_offset": 49.307,
+                        "id": 1010000461760014,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 48.876,
+                        "text": "ancient"
+                    },
+                    {
+                        "end_offset": 50.388,
+                        "id": 1010000501370000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 50.137,
+                        "text": "i'm"
+                    },
+                    {
+                        "end_offset": 50.673,
+                        "id": 1010000501370001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 50.388,
+                        "text": "feeling"
+                    },
+                    {
+                        "end_offset": 50.928,
+                        "id": 1010000501370002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 50.676,
+                        "text": "really"
+                    },
+                    {
+                        "end_offset": 51.36,
+                        "id": 1010000501370003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 50.928,
+                        "text": "tired"
+                    },
+                    {
+                        "end_offset": 51.468,
+                        "id": 1010000501370004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 51.36,
+                        "text": "and"
+                    },
+                    {
+                        "end_offset": 51.864,
+                        "id": 1010000501370005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 51.468,
+                        "text": "depressed"
+                    },
+                    {
+                        "end_offset": 52.292,
+                        "id": 1010000501370006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 52.149,
+                        "text": "and"
+                    },
+                    {
+                        "end_offset": 52.368,
+                        "id": 1010000501370007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 52.295,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 52.584,
+                        "id": 1010000501370008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 52.368,
+                        "text": "think"
+                    },
+                    {
+                        "end_offset": 52.656,
+                        "id": 1010000501370009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 52.584,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 52.836,
+                        "id": 1010000501370010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 52.656,
+                        "text": "have"
+                    },
+                    {
+                        "end_offset": 52.872,
+                        "id": 1010000501370011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 52.836,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 53.376,
+                        "id": 1010000501370012,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 52.872,
+                        "text": "fever"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 60.54,
+                "participant_id": 9303,
+                "start_offset": 56.58,
+                "text": "What are you crazy you can't just stop taking medication without talking to your doctor?",
+                "words": [
+                    {
+                        "end_offset": 56.832,
+                        "id": 1000000565800000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 56.58,
+                        "text": "what"
+                    },
+                    {
+                        "end_offset": 56.976,
+                        "id": 1000000565800001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 56.868,
+                        "text": "are"
+                    },
+                    {
+                        "end_offset": 57.12,
+                        "id": 1000000565800002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 56.976,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 57.623,
+                        "id": 1000000565800003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 57.12,
+                        "text": "crazy"
+                    },
+                    {
+                        "end_offset": 57.732,
+                        "id": 1000000565800004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 57.624,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 57.952,
+                        "id": 1000000565800005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 57.732,
+                        "text": "can't"
+                    },
+                    {
+                        "end_offset": 58.079,
+                        "id": 1000000565800006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 57.952,
+                        "text": "just"
+                    },
+                    {
+                        "end_offset": 58.383,
+                        "id": 1000000565800007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 58.083,
+                        "text": "stop"
+                    },
+                    {
+                        "end_offset": 58.776,
+                        "id": 1000000565800008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 58.416,
+                        "text": "taking"
+                    },
+                    {
+                        "end_offset": 59.28,
+                        "id": 1000000565800009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 58.776,
+                        "text": "medication"
+                    },
+                    {
+                        "end_offset": 59.532,
+                        "id": 1000000565800010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 59.28,
+                        "text": "without"
+                    },
+                    {
+                        "end_offset": 59.892,
+                        "id": 1000000565800011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 59.532,
+                        "text": "talking"
+                    },
+                    {
+                        "end_offset": 59.964,
+                        "id": 1000000565800012,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 59.892,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 60.108,
+                        "id": 1000000565800013,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 59.964,
+                        "text": "your"
+                    },
+                    {
+                        "end_offset": 60.54,
+                        "id": 1000000565800014,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 60.108,
+                        "text": "doctor"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 65.328,
+                "participant_id": 0,
+                "start_offset": 61.473,
+                "text": "I know. But I just didn't feel like myself. What do you think I should do.",
+                "words": [
+                    {
+                        "end_offset": 61.58,
+                        "id": 1010000614730000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 61.473,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 61.976,
+                        "id": 1010000614730001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 61.582,
+                        "text": "know"
+                    },
+                    {
+                        "end_offset": 62.353,
+                        "id": 1010000614730002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 62.226,
+                        "text": "but"
+                    },
+                    {
+                        "end_offset": 62.484,
+                        "id": 1010000614730003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 62.397,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 62.7,
+                        "id": 1010000614730004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 62.484,
+                        "text": "just"
+                    },
+                    {
+                        "end_offset": 62.88,
+                        "id": 1010000614730005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 62.7,
+                        "text": "didn't"
+                    },
+                    {
+                        "end_offset": 63.06,
+                        "id": 1010000614730006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 62.88,
+                        "text": "feel"
+                    },
+                    {
+                        "end_offset": 63.24,
+                        "id": 1010000614730007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 63.06,
+                        "text": "like"
+                    },
+                    {
+                        "end_offset": 63.744,
+                        "id": 1010000614730008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 63.24,
+                        "text": "myself"
+                    },
+                    {
+                        "end_offset": 64.462,
+                        "id": 1010000643550000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 64.355,
+                        "text": "what"
+                    },
+                    {
+                        "end_offset": 64.535,
+                        "id": 1010000643550001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 64.462,
+                        "text": "do"
+                    },
+                    {
+                        "end_offset": 64.607,
+                        "id": 1010000643550002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 64.535,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 64.751,
+                        "id": 1010000643550003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 64.607,
+                        "text": "think"
+                    },
+                    {
+                        "end_offset": 64.824,
+                        "id": 1010000643550004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 64.751,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 65.04,
+                        "id": 1010000643550005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 64.824,
+                        "text": "should"
+                    },
+                    {
+                        "end_offset": 65.328,
+                        "id": 1010000643550006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 65.04,
+                        "text": "do"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 69.144,
+                "participant_id": 9303,
+                "start_offset": 64.671,
+                "text": "Ooh. You need to talk to a doctor, I will transfer you now?",
+                "words": [
+                    {
+                        "end_offset": 64.709,
+                        "id": 1000000646710000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 64.671,
+                        "text": "ooh"
+                    },
+                    {
+                        "end_offset": 66.512,
+                        "id": 1000000662620000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 66.262,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 66.804,
+                        "id": 1000000662620001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 66.513,
+                        "text": "need"
+                    },
+                    {
+                        "end_offset": 66.912,
+                        "id": 1000000662620002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 66.804,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 67.2,
+                        "id": 1000000662620003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 66.912,
+                        "text": "talk"
+                    },
+                    {
+                        "end_offset": 67.344,
+                        "id": 1000000662620004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 67.2,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 67.416,
+                        "id": 1000000662620005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 67.344,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 67.848,
+                        "id": 1000000662620006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 67.416,
+                        "text": "doctor"
+                    },
+                    {
+                        "end_offset": 67.956,
+                        "id": 1000000662620007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 67.848,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 68.1,
+                        "id": 1000000662620008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 67.956,
+                        "text": "will"
+                    },
+                    {
+                        "end_offset": 68.64,
+                        "id": 1000000662620009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 68.1,
+                        "text": "transfer"
+                    },
+                    {
+                        "end_offset": 68.712,
+                        "id": 1000000662620010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 68.64,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 69.144,
+                        "id": 1000000662620011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 68.712,
+                        "text": "now"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 74.472,
+                "participant_id": 0,
+                "start_offset": 70.112,
+                "text": "How is this related to my insurance claim? Maybe I should speak to a supervisor",
+                "words": [
+                    {
+                        "end_offset": 70.325,
+                        "id": 1010000701120000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 70.112,
+                        "text": "how"
+                    },
+                    {
+                        "end_offset": 70.476,
+                        "id": 1010000701120001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 70.328,
+                        "text": "is"
+                    },
+                    {
+                        "end_offset": 70.656,
+                        "id": 1010000701120002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 70.476,
+                        "text": "this"
+                    },
+                    {
+                        "end_offset": 71.088,
+                        "id": 1010000701120003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 70.656,
+                        "text": "related"
+                    },
+                    {
+                        "end_offset": 71.196,
+                        "id": 1010000701120004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 71.088,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 71.34,
+                        "id": 1010000701120005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 71.196,
+                        "text": "my"
+                    },
+                    {
+                        "end_offset": 71.88,
+                        "id": 1010000701120006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 71.34,
+                        "text": "insurance"
+                    },
+                    {
+                        "end_offset": 72.24,
+                        "id": 1010000701120007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 71.88,
+                        "text": "claim"
+                    },
+                    {
+                        "end_offset": 72.96,
+                        "id": 1010000701120008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 72.672,
+                        "text": "maybe"
+                    },
+                    {
+                        "end_offset": 73.032,
+                        "id": 1010000701120009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 72.96,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 73.212,
+                        "id": 1010000701120010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 73.032,
+                        "text": "should"
+                    },
+                    {
+                        "end_offset": 73.5,
+                        "id": 1010000701120011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 73.212,
+                        "text": "speak"
+                    },
+                    {
+                        "end_offset": 73.608,
+                        "id": 1010000701120012,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 73.5,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 73.644,
+                        "id": 1010000701120013,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 73.608,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 74.472,
+                        "id": 1010000701120014,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 73.644,
+                        "text": "supervisor"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 79.26,
+                "participant_id": 9303,
+                "start_offset": 76.249,
+                "text": "I'm sorry, there are no supervisors available due to the virus.",
+                "words": [
+                    {
+                        "end_offset": 76.56,
+                        "id": 1000000762490000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 76.249,
+                        "text": "i'm"
+                    },
+                    {
+                        "end_offset": 76.848,
+                        "id": 1000000762490001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 76.56,
+                        "text": "sorry"
+                    },
+                    {
+                        "end_offset": 76.992,
+                        "id": 1000000762490002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 76.848,
+                        "text": "there"
+                    },
+                    {
+                        "end_offset": 77.1,
+                        "id": 1000000762490003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 76.992,
+                        "text": "are"
+                    },
+                    {
+                        "end_offset": 77.316,
+                        "id": 1000000762490004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 77.1,
+                        "text": "no"
+                    },
+                    {
+                        "end_offset": 78.0,
+                        "id": 1000000762490005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 77.316,
+                        "text": "supervisors"
+                    },
+                    {
+                        "end_offset": 78.396,
+                        "id": 1000000762490006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 78.0,
+                        "text": "available"
+                    },
+                    {
+                        "end_offset": 78.556,
+                        "id": 1000000762490007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 78.396,
+                        "text": "due"
+                    },
+                    {
+                        "end_offset": 78.642,
+                        "id": 1000000762490008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 78.557,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 78.72,
+                        "id": 1000000762490009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 78.642,
+                        "text": "the"
+                    },
+                    {
+                        "end_offset": 79.26,
+                        "id": 1000000762490010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 78.72,
+                        "text": "virus"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 83.904,
+                "participant_id": 0,
+                "start_offset": 81.24,
+                "text": "Can you please have someone call me back as soon as possible?",
+                "words": [
+                    {
+                        "end_offset": 81.456,
+                        "id": 1010000812400000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 81.24,
+                        "text": "can"
+                    },
+                    {
+                        "end_offset": 81.528,
+                        "id": 1010000812400001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 81.456,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 81.852,
+                        "id": 1010000812400002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 81.528,
+                        "text": "please"
+                    },
+                    {
+                        "end_offset": 81.96,
+                        "id": 1010000812400003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 81.852,
+                        "text": "have"
+                    },
+                    {
+                        "end_offset": 82.284,
+                        "id": 1010000812400004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 81.96,
+                        "text": "someone"
+                    },
+                    {
+                        "end_offset": 82.464,
+                        "id": 1010000812400005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 82.284,
+                        "text": "call"
+                    },
+                    {
+                        "end_offset": 82.608,
+                        "id": 1010000812400006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 82.464,
+                        "text": "me"
+                    },
+                    {
+                        "end_offset": 82.86,
+                        "id": 1010000812400007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 82.608,
+                        "text": "back"
+                    },
+                    {
+                        "end_offset": 83.004,
+                        "id": 1010000812400008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 82.86,
+                        "text": "as"
+                    },
+                    {
+                        "end_offset": 83.184,
+                        "id": 1010000812400009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 83.004,
+                        "text": "soon"
+                    },
+                    {
+                        "end_offset": 83.328,
+                        "id": 1010000812400010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 83.184,
+                        "text": "as"
+                    },
+                    {
+                        "end_offset": 83.904,
+                        "id": 1010000812400011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 83.328,
+                        "text": "possible"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 98.16,
+                "participant_id": 9303,
+                "start_offset": 88.512,
+                "text": "Hi, Mr, Jones, I'm the supervisor on duty. I understand that you've been asking for a callback. See we can get this issue resolved now so that won't be necessary.",
+                "words": [
+                    {
+                        "end_offset": 88.692,
+                        "id": 1000000885120000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 88.512,
+                        "text": "hi"
+                    },
+                    {
+                        "end_offset": 88.974,
+                        "id": 1000000885120001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 88.692,
+                        "text": "mr"
+                    },
+                    {
+                        "end_offset": 89.375,
+                        "id": 1000000885120002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 88.974,
+                        "text": "jones"
+                    },
+                    {
+                        "end_offset": 89.812,
+                        "id": 1000000885120003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 89.578,
+                        "text": "i'm"
+                    },
+                    {
+                        "end_offset": 89.898,
+                        "id": 1000000885120004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 89.829,
+                        "text": "the"
+                    },
+                    {
+                        "end_offset": 90.528,
+                        "id": 1000000885120005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 89.914,
+                        "text": "supervisor"
+                    },
+                    {
+                        "end_offset": 90.672,
+                        "id": 1000000885120006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 90.528,
+                        "text": "on"
+                    },
+                    {
+                        "end_offset": 90.996,
+                        "id": 1000000885120007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 90.672,
+                        "text": "duty"
+                    },
+                    {
+                        "end_offset": 91.284,
+                        "id": 1000000885120008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 91.14,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 91.86,
+                        "id": 1000000885120009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 91.284,
+                        "text": "understand"
+                    },
+                    {
+                        "end_offset": 92.004,
+                        "id": 1000000885120010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 91.86,
+                        "text": "that"
+                    },
+                    {
+                        "end_offset": 92.183,
+                        "id": 1000000885120011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 92.004,
+                        "text": "you've"
+                    },
+                    {
+                        "end_offset": 92.292,
+                        "id": 1000000885120012,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 92.183,
+                        "text": "been"
+                    },
+                    {
+                        "end_offset": 92.652,
+                        "id": 1000000885120013,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 92.292,
+                        "text": "asking"
+                    },
+                    {
+                        "end_offset": 92.868,
+                        "id": 1000000885120014,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 92.652,
+                        "text": "for"
+                    },
+                    {
+                        "end_offset": 92.94,
+                        "id": 1000000885120015,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 92.868,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 93.444,
+                        "id": 1000000885120016,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 92.945,
+                        "text": "callback"
+                    },
+                    {
+                        "end_offset": 94.306,
+                        "id": 1000000940340000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 94.034,
+                        "text": "see"
+                    },
+                    {
+                        "end_offset": 94.484,
+                        "id": 1000000940340001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 94.324,
+                        "text": "we"
+                    },
+                    {
+                        "end_offset": 94.592,
+                        "id": 1000000940340002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 94.484,
+                        "text": "can"
+                    },
+                    {
+                        "end_offset": 94.776,
+                        "id": 1000000940340003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 94.593,
+                        "text": "get"
+                    },
+                    {
+                        "end_offset": 94.956,
+                        "id": 1000000940340004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 94.776,
+                        "text": "this"
+                    },
+                    {
+                        "end_offset": 95.352,
+                        "id": 1000000940340005,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 94.992,
+                        "text": "issue"
+                    },
+                    {
+                        "end_offset": 96.035,
+                        "id": 1000000940340006,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 95.352,
+                        "text": "resolved"
+                    },
+                    {
+                        "end_offset": 96.684,
+                        "id": 1000000940340007,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 96.252,
+                        "text": "now"
+                    },
+                    {
+                        "end_offset": 97.004,
+                        "id": 1000000940340008,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 96.684,
+                        "text": "so"
+                    },
+                    {
+                        "end_offset": 97.272,
+                        "id": 1000000940340009,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 97.08,
+                        "text": "that"
+                    },
+                    {
+                        "end_offset": 97.428,
+                        "id": 1000000940340010,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 97.272,
+                        "text": "won't"
+                    },
+                    {
+                        "end_offset": 97.512,
+                        "id": 1000000940340011,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 97.428,
+                        "text": "be"
+                    },
+                    {
+                        "end_offset": 98.16,
+                        "id": 1000000940340012,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 97.512,
+                        "text": "necessary"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 115.691,
+                "participant_id": 0,
+                "start_offset": 99.42,
+                "text": "Fantastic. Truly outstanding customer service. (Okay. Thanks.) All right, cool. Thanks bye",
+                "words": [
+                    {
+                        "end_offset": 100.248,
+                        "id": 1010000994200000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 99.42,
+                        "text": "fantastic"
+                    },
+                    {
+                        "end_offset": 101.436,
+                        "id": 1010001008170000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 100.817,
+                        "text": "truly"
+                    },
+                    {
+                        "end_offset": 102.12,
+                        "id": 1010001008170001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 101.436,
+                        "text": "outstanding"
+                    },
+                    {
+                        "end_offset": 102.588,
+                        "id": 1010001008170002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 102.12,
+                        "text": "customer"
+                    },
+                    {
+                        "end_offset": 103.128,
+                        "id": 1010001008170003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 102.588,
+                        "text": "service"
+                    },
+                    {
+                        "end_offset": 112.992,
+                        "id": 1000001126320000,
+                        "is_backchannel": true,
+                        "is_redacted": false,
+                        "start_offset": 112.632,
+                        "text": "okay"
+                    },
+                    {
+                        "end_offset": 113.388,
+                        "id": 1000001126320001,
+                        "is_backchannel": true,
+                        "is_redacted": false,
+                        "start_offset": 113.064,
+                        "text": "thanks"
+                    },
+                    {
+                        "end_offset": 114.351,
+                        "id": 1010001142940000,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 114.294,
+                        "text": "all"
+                    },
+                    {
+                        "end_offset": 114.682,
+                        "id": 1010001142940001,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 114.453,
+                        "text": "right"
+                    },
+                    {
+                        "end_offset": 114.972,
+                        "id": 1010001142940002,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 114.682,
+                        "text": "cool"
+                    },
+                    {
+                        "end_offset": 115.27,
+                        "id": 1010001142940003,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 115.059,
+                        "text": "thanks"
+                    },
+                    {
+                        "end_offset": 115.691,
+                        "id": 1010001142940004,
+                        "is_backchannel": false,
+                        "is_redacted": false,
+                        "start_offset": 115.511,
+                        "text": "bye"
+                    }
+                ]
+            }
+        ],
+        "turns": [
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 5.568,
+                "participant_id": 9303,
+                "start_offset": 2.269,
+                "text": "hello thank you for calling be beyond health is this a new or existing claim",
+                "words": [
+                    {
+                        "end_offset": 2.514,
+                        "id": 1000000022690000,
+                        "start_offset": 2.269,
+                        "text": "hello"
+                    },
+                    {
+                        "end_offset": 2.796,
+                        "id": 1000000022690001,
+                        "start_offset": 2.544,
+                        "text": "thank"
+                    },
+                    {
+                        "end_offset": 2.868,
+                        "id": 1000000022690002,
+                        "start_offset": 2.796,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 2.94,
+                        "id": 1000000022690003,
+                        "start_offset": 2.868,
+                        "text": "for"
+                    },
+                    {
+                        "end_offset": 3.372,
+                        "id": 1000000022690004,
+                        "start_offset": 3.012,
+                        "text": "calling"
+                    },
+                    {
+                        "end_offset": 3.499,
+                        "id": 1000000022690005,
+                        "start_offset": 3.372,
+                        "text": "be"
+                    },
+                    {
+                        "end_offset": 3.696,
+                        "id": 1000000022690006,
+                        "start_offset": 3.499,
+                        "text": "beyond"
+                    },
+                    {
+                        "end_offset": 3.948,
+                        "id": 1000000022690007,
+                        "start_offset": 3.696,
+                        "text": "health"
+                    },
+                    {
+                        "end_offset": 4.128,
+                        "id": 1000000022690008,
+                        "start_offset": 3.984,
+                        "text": "is"
+                    },
+                    {
+                        "end_offset": 4.308,
+                        "id": 1000000022690009,
+                        "start_offset": 4.128,
+                        "text": "this"
+                    },
+                    {
+                        "end_offset": 4.38,
+                        "id": 1000000022690010,
+                        "start_offset": 4.308,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 4.631,
+                        "id": 1000000022690011,
+                        "start_offset": 4.38,
+                        "text": "new"
+                    },
+                    {
+                        "end_offset": 4.74,
+                        "id": 1000000022690012,
+                        "start_offset": 4.631,
+                        "text": "or"
+                    },
+                    {
+                        "end_offset": 5.208,
+                        "id": 1000000022690013,
+                        "start_offset": 4.74,
+                        "text": "existing"
+                    },
+                    {
+                        "end_offset": 5.568,
+                        "id": 1000000022690014,
+                        "start_offset": 5.208,
+                        "text": "claim"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 8.628,
+                "participant_id": 0,
+                "start_offset": 6.756,
+                "text": "i can barely hear you can you speak up",
+                "words": [
+                    {
+                        "end_offset": 6.864,
+                        "id": 1010000067560000,
+                        "start_offset": 6.756,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 7.044,
+                        "id": 1010000067560001,
+                        "start_offset": 6.864,
+                        "text": "can"
+                    },
+                    {
+                        "end_offset": 7.368,
+                        "id": 1010000067560002,
+                        "start_offset": 7.044,
+                        "text": "barely"
+                    },
+                    {
+                        "end_offset": 7.584,
+                        "id": 1010000067560003,
+                        "start_offset": 7.368,
+                        "text": "hear"
+                    },
+                    {
+                        "end_offset": 7.8,
+                        "id": 1010000067560004,
+                        "start_offset": 7.584,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 8.052,
+                        "id": 1010000067560005,
+                        "start_offset": 7.836,
+                        "text": "can"
+                    },
+                    {
+                        "end_offset": 8.16,
+                        "id": 1010000067560006,
+                        "start_offset": 8.052,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 8.484,
+                        "id": 1010000067560007,
+                        "start_offset": 8.16,
+                        "text": "speak"
+                    },
+                    {
+                        "end_offset": 8.628,
+                        "id": 1010000067560008,
+                        "start_offset": 8.484,
+                        "text": "up"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 14.1,
+                "participant_id": 9303,
+                "start_offset": 10.31,
+                "text": "hold on a second is this any better",
+                "words": [
+                    {
+                        "end_offset": 10.583,
+                        "id": 1000000103100000,
+                        "start_offset": 10.31,
+                        "text": "hold"
+                    },
+                    {
+                        "end_offset": 10.718,
+                        "id": 1000000103100001,
+                        "start_offset": 10.594,
+                        "text": "on"
+                    },
+                    {
+                        "end_offset": 10.753,
+                        "id": 1000000103100002,
+                        "start_offset": 10.718,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 11.112,
+                        "id": 1000000103100003,
+                        "start_offset": 10.753,
+                        "text": "second"
+                    },
+                    {
+                        "end_offset": 13.416,
+                        "id": 1000000132720000,
+                        "start_offset": 13.272,
+                        "text": "is"
+                    },
+                    {
+                        "end_offset": 13.595,
+                        "id": 1000000132720001,
+                        "start_offset": 13.416,
+                        "text": "this"
+                    },
+                    {
+                        "end_offset": 13.776,
+                        "id": 1000000132720002,
+                        "start_offset": 13.596,
+                        "text": "any"
+                    },
+                    {
+                        "end_offset": 14.1,
+                        "id": 1000000132720003,
+                        "start_offset": 13.776,
+                        "text": "better"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 16.908,
+                "participant_id": 0,
+                "start_offset": 15.252,
+                "text": "yes that's much better thank you",
+                "words": [
+                    {
+                        "end_offset": 15.54,
+                        "id": 1010000152520000,
+                        "start_offset": 15.252,
+                        "text": "yes"
+                    },
+                    {
+                        "end_offset": 15.719,
+                        "id": 1010000152520001,
+                        "start_offset": 15.54,
+                        "text": "that's"
+                    },
+                    {
+                        "end_offset": 15.972,
+                        "id": 1010000152520002,
+                        "start_offset": 15.72,
+                        "text": "much"
+                    },
+                    {
+                        "end_offset": 16.404,
+                        "id": 1010000152520003,
+                        "start_offset": 15.972,
+                        "text": "better"
+                    },
+                    {
+                        "end_offset": 16.728,
+                        "id": 1010000152520004,
+                        "start_offset": 16.476,
+                        "text": "thank"
+                    },
+                    {
+                        "end_offset": 16.908,
+                        "id": 1010000152520005,
+                        "start_offset": 16.728,
+                        "text": "you"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 20.184,
+                "participant_id": 9303,
+                "start_offset": 18.779,
+                "text": "and i asked for your case number",
+                "words": [
+                    {
+                        "end_offset": 18.922,
+                        "id": 1000000187790000,
+                        "start_offset": 18.779,
+                        "text": "and"
+                    },
+                    {
+                        "end_offset": 19.032,
+                        "id": 1000000187790001,
+                        "start_offset": 18.923,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 19.338,
+                        "id": 1000000187790002,
+                        "start_offset": 19.032,
+                        "text": "asked"
+                    },
+                    {
+                        "end_offset": 19.428,
+                        "id": 1000000187790003,
+                        "start_offset": 19.338,
+                        "text": "for"
+                    },
+                    {
+                        "end_offset": 19.572,
+                        "id": 1000000187790004,
+                        "start_offset": 19.428,
+                        "text": "your"
+                    },
+                    {
+                        "end_offset": 19.824,
+                        "id": 1000000187790005,
+                        "start_offset": 19.572,
+                        "text": "case"
+                    },
+                    {
+                        "end_offset": 20.184,
+                        "id": 1000000187790006,
+                        "start_offset": 19.824,
+                        "text": "number"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 25.296,
+                "participant_id": 0,
+                "start_offset": 21.84,
+                "text": "my case number is one two three four five six",
+                "words": [
+                    {
+                        "end_offset": 22.056,
+                        "id": 1010000218400000,
+                        "start_offset": 21.84,
+                        "text": "my"
+                    },
+                    {
+                        "end_offset": 22.308,
+                        "id": 1010000218400001,
+                        "start_offset": 22.056,
+                        "text": "case"
+                    },
+                    {
+                        "end_offset": 22.668,
+                        "id": 1010000218400002,
+                        "start_offset": 22.308,
+                        "text": "number"
+                    },
+                    {
+                        "end_offset": 22.992,
+                        "id": 1010000218400003,
+                        "start_offset": 22.668,
+                        "text": "is"
+                    },
+                    {
+                        "end_offset": 23.388,
+                        "id": 1010000218400004,
+                        "start_offset": 23.028,
+                        "text": "one"
+                    },
+                    {
+                        "end_offset": 23.604,
+                        "id": 1010000218400005,
+                        "start_offset": 23.388,
+                        "text": "two"
+                    },
+                    {
+                        "end_offset": 24.072,
+                        "id": 1010000218400006,
+                        "start_offset": 23.604,
+                        "text": "three"
+                    },
+                    {
+                        "end_offset": 24.575,
+                        "id": 1010000218400007,
+                        "start_offset": 24.288,
+                        "text": "four"
+                    },
+                    {
+                        "end_offset": 24.828,
+                        "id": 1010000218400008,
+                        "start_offset": 24.576,
+                        "text": "five"
+                    },
+                    {
+                        "end_offset": 25.296,
+                        "id": 1010000218400009,
+                        "start_offset": 24.828,
+                        "text": "six"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 29.076,
+                "participant_id": 9303,
+                "start_offset": 27.6,
+                "text": "am i speaking with mr smith",
+                "words": [
+                    {
+                        "end_offset": 27.816,
+                        "id": 1000000276000000,
+                        "start_offset": 27.6,
+                        "text": "am"
+                    },
+                    {
+                        "end_offset": 27.96,
+                        "id": 1000000276000001,
+                        "start_offset": 27.816,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 28.32,
+                        "id": 1000000276000002,
+                        "start_offset": 27.96,
+                        "text": "speaking"
+                    },
+                    {
+                        "end_offset": 28.464,
+                        "id": 1000000276000003,
+                        "start_offset": 28.32,
+                        "text": "with"
+                    },
+                    {
+                        "end_offset": 28.788,
+                        "id": 1000000276000004,
+                        "start_offset": 28.464,
+                        "text": "mr"
+                    },
+                    {
+                        "end_offset": 29.076,
+                        "id": 1000000276000005,
+                        "start_offset": 28.788,
+                        "text": "smith"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 30.48,
+                "participant_id": 0,
+                "start_offset": 29.832,
+                "text": "yes",
+                "words": [
+                    {
+                        "end_offset": 30.48,
+                        "id": 1010000298320000,
+                        "start_offset": 29.832,
+                        "text": "yes"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 41.388,
+                "participant_id": 9303,
+                "start_offset": 31.812,
+                "text": "okay i found your case i see that you are currently taking a prescription can you confirm the medication for me and that you've been taking it twice a day as prescribed by a doctor",
+                "words": [
+                    {
+                        "end_offset": 32.244,
+                        "id": 1000000318120000,
+                        "start_offset": 31.812,
+                        "text": "okay"
+                    },
+                    {
+                        "end_offset": 32.28,
+                        "id": 1000000318120001,
+                        "start_offset": 32.244,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 32.567,
+                        "id": 1000000318120002,
+                        "start_offset": 32.28,
+                        "text": "found"
+                    },
+                    {
+                        "end_offset": 32.671,
+                        "id": 1000000318120003,
+                        "start_offset": 32.567,
+                        "text": "your"
+                    },
+                    {
+                        "end_offset": 33.036,
+                        "id": 1000000318120004,
+                        "start_offset": 32.671,
+                        "text": "case"
+                    },
+                    {
+                        "end_offset": 33.504,
+                        "id": 1000000318120005,
+                        "start_offset": 33.36,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 33.756,
+                        "id": 1000000318120006,
+                        "start_offset": 33.504,
+                        "text": "see"
+                    },
+                    {
+                        "end_offset": 33.936,
+                        "id": 1000000318120007,
+                        "start_offset": 33.756,
+                        "text": "that"
+                    },
+                    {
+                        "end_offset": 34.039,
+                        "id": 1000000318120008,
+                        "start_offset": 33.936,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 34.152,
+                        "id": 1000000318120009,
+                        "start_offset": 34.039,
+                        "text": "are"
+                    },
+                    {
+                        "end_offset": 34.584,
+                        "id": 1000000318120010,
+                        "start_offset": 34.152,
+                        "text": "currently"
+                    },
+                    {
+                        "end_offset": 35.017,
+                        "id": 1000000318120011,
+                        "start_offset": 34.584,
+                        "text": "taking"
+                    },
+                    {
+                        "end_offset": 35.086,
+                        "id": 1000000318120012,
+                        "start_offset": 35.017,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 35.808,
+                        "id": 1000000318120013,
+                        "start_offset": 35.088,
+                        "text": "prescription"
+                    },
+                    {
+                        "end_offset": 36.6,
+                        "id": 1000000364200000,
+                        "start_offset": 36.42,
+                        "text": "can"
+                    },
+                    {
+                        "end_offset": 36.672,
+                        "id": 1000000364200001,
+                        "start_offset": 36.6,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 37.215,
+                        "id": 1000000364200002,
+                        "start_offset": 36.672,
+                        "text": "confirm"
+                    },
+                    {
+                        "end_offset": 37.32,
+                        "id": 1000000364200003,
+                        "start_offset": 37.215,
+                        "text": "the"
+                    },
+                    {
+                        "end_offset": 37.968,
+                        "id": 1000000364200004,
+                        "start_offset": 37.32,
+                        "text": "medication"
+                    },
+                    {
+                        "end_offset": 38.112,
+                        "id": 1000000364200005,
+                        "start_offset": 37.968,
+                        "text": "for"
+                    },
+                    {
+                        "end_offset": 38.364,
+                        "id": 1000000364200006,
+                        "start_offset": 38.112,
+                        "text": "me"
+                    },
+                    {
+                        "end_offset": 38.576,
+                        "id": 1000000364200007,
+                        "start_offset": 38.364,
+                        "text": "and"
+                    },
+                    {
+                        "end_offset": 38.688,
+                        "id": 1000000364200008,
+                        "start_offset": 38.576,
+                        "text": "that"
+                    },
+                    {
+                        "end_offset": 38.796,
+                        "id": 1000000364200009,
+                        "start_offset": 38.688,
+                        "text": "you've"
+                    },
+                    {
+                        "end_offset": 38.94,
+                        "id": 1000000364200010,
+                        "start_offset": 38.796,
+                        "text": "been"
+                    },
+                    {
+                        "end_offset": 39.3,
+                        "id": 1000000364200011,
+                        "start_offset": 38.94,
+                        "text": "taking"
+                    },
+                    {
+                        "end_offset": 39.443,
+                        "id": 1000000364200012,
+                        "start_offset": 39.3,
+                        "text": "it"
+                    },
+                    {
+                        "end_offset": 39.768,
+                        "id": 1000000364200013,
+                        "start_offset": 39.443,
+                        "text": "twice"
+                    },
+                    {
+                        "end_offset": 39.889,
+                        "id": 1000000364200014,
+                        "start_offset": 39.812,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 40.092,
+                        "id": 1000000364200015,
+                        "start_offset": 39.889,
+                        "text": "day"
+                    },
+                    {
+                        "end_offset": 40.272,
+                        "id": 1000000364200016,
+                        "start_offset": 40.092,
+                        "text": "as"
+                    },
+                    {
+                        "end_offset": 40.776,
+                        "id": 1000000364200017,
+                        "start_offset": 40.308,
+                        "text": "prescribed"
+                    },
+                    {
+                        "end_offset": 40.908,
+                        "id": 1000000364200018,
+                        "start_offset": 40.776,
+                        "text": "by"
+                    },
+                    {
+                        "end_offset": 40.963,
+                        "id": 1000000364200019,
+                        "start_offset": 40.908,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 41.388,
+                        "id": 1000000364200020,
+                        "start_offset": 40.967,
+                        "text": "doctor"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 53.376,
+                "participant_id": 0,
+                "start_offset": 42.756,
+                "text": "sure i'm taking a prescription of millennium i stopped taking it a couple of days ago because it was making me ancient i'm feeling really tired and depressed and i think i have a fever",
+                "words": [
+                    {
+                        "end_offset": 43.152,
+                        "id": 1010000427560000,
+                        "start_offset": 42.756,
+                        "text": "sure"
+                    },
+                    {
+                        "end_offset": 43.901,
+                        "id": 1010000437600000,
+                        "start_offset": 43.76,
+                        "text": "i'm"
+                    },
+                    {
+                        "end_offset": 44.232,
+                        "id": 1010000437600001,
+                        "start_offset": 43.906,
+                        "text": "taking"
+                    },
+                    {
+                        "end_offset": 44.304,
+                        "id": 1010000437600002,
+                        "start_offset": 44.232,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 44.844,
+                        "id": 1010000437600003,
+                        "start_offset": 44.304,
+                        "text": "prescription"
+                    },
+                    {
+                        "end_offset": 44.952,
+                        "id": 1010000437600004,
+                        "start_offset": 44.844,
+                        "text": "of"
+                    },
+                    {
+                        "end_offset": 45.6,
+                        "id": 1010000437600005,
+                        "start_offset": 44.952,
+                        "text": "millennium"
+                    },
+                    {
+                        "end_offset": 46.32,
+                        "id": 1010000461760000,
+                        "start_offset": 46.176,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 46.608,
+                        "id": 1010000461760001,
+                        "start_offset": 46.32,
+                        "text": "stopped"
+                    },
+                    {
+                        "end_offset": 46.896,
+                        "id": 1010000461760002,
+                        "start_offset": 46.608,
+                        "text": "taking"
+                    },
+                    {
+                        "end_offset": 47.004,
+                        "id": 1010000461760003,
+                        "start_offset": 46.896,
+                        "text": "it"
+                    },
+                    {
+                        "end_offset": 47.04,
+                        "id": 1010000461760004,
+                        "start_offset": 47.004,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 47.292,
+                        "id": 1010000461760005,
+                        "start_offset": 47.04,
+                        "text": "couple"
+                    },
+                    {
+                        "end_offset": 47.364,
+                        "id": 1010000461760006,
+                        "start_offset": 47.292,
+                        "text": "of"
+                    },
+                    {
+                        "end_offset": 47.58,
+                        "id": 1010000461760007,
+                        "start_offset": 47.364,
+                        "text": "days"
+                    },
+                    {
+                        "end_offset": 47.832,
+                        "id": 1010000461760008,
+                        "start_offset": 47.58,
+                        "text": "ago"
+                    },
+                    {
+                        "end_offset": 48.192,
+                        "id": 1010000461760009,
+                        "start_offset": 47.832,
+                        "text": "because"
+                    },
+                    {
+                        "end_offset": 48.264,
+                        "id": 1010000461760010,
+                        "start_offset": 48.192,
+                        "text": "it"
+                    },
+                    {
+                        "end_offset": 48.408,
+                        "id": 1010000461760011,
+                        "start_offset": 48.264,
+                        "text": "was"
+                    },
+                    {
+                        "end_offset": 48.706,
+                        "id": 1010000461760012,
+                        "start_offset": 48.408,
+                        "text": "making"
+                    },
+                    {
+                        "end_offset": 48.84,
+                        "id": 1010000461760013,
+                        "start_offset": 48.706,
+                        "text": "me"
+                    },
+                    {
+                        "end_offset": 49.307,
+                        "id": 1010000461760014,
+                        "start_offset": 48.876,
+                        "text": "ancient"
+                    },
+                    {
+                        "end_offset": 50.388,
+                        "id": 1010000501370000,
+                        "start_offset": 50.137,
+                        "text": "i'm"
+                    },
+                    {
+                        "end_offset": 50.673,
+                        "id": 1010000501370001,
+                        "start_offset": 50.388,
+                        "text": "feeling"
+                    },
+                    {
+                        "end_offset": 50.928,
+                        "id": 1010000501370002,
+                        "start_offset": 50.676,
+                        "text": "really"
+                    },
+                    {
+                        "end_offset": 51.36,
+                        "id": 1010000501370003,
+                        "start_offset": 50.928,
+                        "text": "tired"
+                    },
+                    {
+                        "end_offset": 51.468,
+                        "id": 1010000501370004,
+                        "start_offset": 51.36,
+                        "text": "and"
+                    },
+                    {
+                        "end_offset": 51.864,
+                        "id": 1010000501370005,
+                        "start_offset": 51.468,
+                        "text": "depressed"
+                    },
+                    {
+                        "end_offset": 52.292,
+                        "id": 1010000501370006,
+                        "start_offset": 52.149,
+                        "text": "and"
+                    },
+                    {
+                        "end_offset": 52.368,
+                        "id": 1010000501370007,
+                        "start_offset": 52.295,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 52.584,
+                        "id": 1010000501370008,
+                        "start_offset": 52.368,
+                        "text": "think"
+                    },
+                    {
+                        "end_offset": 52.656,
+                        "id": 1010000501370009,
+                        "start_offset": 52.584,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 52.836,
+                        "id": 1010000501370010,
+                        "start_offset": 52.656,
+                        "text": "have"
+                    },
+                    {
+                        "end_offset": 52.872,
+                        "id": 1010000501370011,
+                        "start_offset": 52.836,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 53.376,
+                        "id": 1010000501370012,
+                        "start_offset": 52.872,
+                        "text": "fever"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 60.54,
+                "participant_id": 9303,
+                "start_offset": 56.58,
+                "text": "what are you crazy you can't just stop taking medication without talking to your doctor",
+                "words": [
+                    {
+                        "end_offset": 56.832,
+                        "id": 1000000565800000,
+                        "start_offset": 56.58,
+                        "text": "what"
+                    },
+                    {
+                        "end_offset": 56.976,
+                        "id": 1000000565800001,
+                        "start_offset": 56.868,
+                        "text": "are"
+                    },
+                    {
+                        "end_offset": 57.12,
+                        "id": 1000000565800002,
+                        "start_offset": 56.976,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 57.623,
+                        "id": 1000000565800003,
+                        "start_offset": 57.12,
+                        "text": "crazy"
+                    },
+                    {
+                        "end_offset": 57.732,
+                        "id": 1000000565800004,
+                        "start_offset": 57.624,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 57.952,
+                        "id": 1000000565800005,
+                        "start_offset": 57.732,
+                        "text": "can't"
+                    },
+                    {
+                        "end_offset": 58.079,
+                        "id": 1000000565800006,
+                        "start_offset": 57.952,
+                        "text": "just"
+                    },
+                    {
+                        "end_offset": 58.383,
+                        "id": 1000000565800007,
+                        "start_offset": 58.083,
+                        "text": "stop"
+                    },
+                    {
+                        "end_offset": 58.776,
+                        "id": 1000000565800008,
+                        "start_offset": 58.416,
+                        "text": "taking"
+                    },
+                    {
+                        "end_offset": 59.28,
+                        "id": 1000000565800009,
+                        "start_offset": 58.776,
+                        "text": "medication"
+                    },
+                    {
+                        "end_offset": 59.532,
+                        "id": 1000000565800010,
+                        "start_offset": 59.28,
+                        "text": "without"
+                    },
+                    {
+                        "end_offset": 59.892,
+                        "id": 1000000565800011,
+                        "start_offset": 59.532,
+                        "text": "talking"
+                    },
+                    {
+                        "end_offset": 59.964,
+                        "id": 1000000565800012,
+                        "start_offset": 59.892,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 60.108,
+                        "id": 1000000565800013,
+                        "start_offset": 59.964,
+                        "text": "your"
+                    },
+                    {
+                        "end_offset": 60.54,
+                        "id": 1000000565800014,
+                        "start_offset": 60.108,
+                        "text": "doctor"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 64.751,
+                "participant_id": 0,
+                "start_offset": 61.473,
+                "text": "i know but i just didn't feel like myself what do you think",
+                "words": [
+                    {
+                        "end_offset": 61.58,
+                        "id": 1010000614730000,
+                        "start_offset": 61.473,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 61.976,
+                        "id": 1010000614730001,
+                        "start_offset": 61.582,
+                        "text": "know"
+                    },
+                    {
+                        "end_offset": 62.353,
+                        "id": 1010000614730002,
+                        "start_offset": 62.226,
+                        "text": "but"
+                    },
+                    {
+                        "end_offset": 62.484,
+                        "id": 1010000614730003,
+                        "start_offset": 62.397,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 62.7,
+                        "id": 1010000614730004,
+                        "start_offset": 62.484,
+                        "text": "just"
+                    },
+                    {
+                        "end_offset": 62.88,
+                        "id": 1010000614730005,
+                        "start_offset": 62.7,
+                        "text": "didn't"
+                    },
+                    {
+                        "end_offset": 63.06,
+                        "id": 1010000614730006,
+                        "start_offset": 62.88,
+                        "text": "feel"
+                    },
+                    {
+                        "end_offset": 63.24,
+                        "id": 1010000614730007,
+                        "start_offset": 63.06,
+                        "text": "like"
+                    },
+                    {
+                        "end_offset": 63.744,
+                        "id": 1010000614730008,
+                        "start_offset": 63.24,
+                        "text": "myself"
+                    },
+                    {
+                        "end_offset": 64.462,
+                        "id": 1010000643550000,
+                        "start_offset": 64.355,
+                        "text": "what"
+                    },
+                    {
+                        "end_offset": 64.535,
+                        "id": 1010000643550001,
+                        "start_offset": 64.462,
+                        "text": "do"
+                    },
+                    {
+                        "end_offset": 64.607,
+                        "id": 1010000643550002,
+                        "start_offset": 64.535,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 64.751,
+                        "id": 1010000643550003,
+                        "start_offset": 64.607,
+                        "text": "think"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 64.709,
+                "participant_id": 9303,
+                "start_offset": 64.671,
+                "text": "ooh",
+                "words": [
+                    {
+                        "end_offset": 64.709,
+                        "id": 1000000646710000,
+                        "start_offset": 64.671,
+                        "text": "ooh"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 65.328,
+                "participant_id": 0,
+                "start_offset": 64.751,
+                "text": "i should do",
+                "words": [
+                    {
+                        "end_offset": 64.824,
+                        "id": 1010000643550004,
+                        "start_offset": 64.751,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 65.04,
+                        "id": 1010000643550005,
+                        "start_offset": 64.824,
+                        "text": "should"
+                    },
+                    {
+                        "end_offset": 65.328,
+                        "id": 1010000643550006,
+                        "start_offset": 65.04,
+                        "text": "do"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 69.144,
+                "participant_id": 9303,
+                "start_offset": 66.262,
+                "text": "you need to talk to a doctor i will transfer you now",
+                "words": [
+                    {
+                        "end_offset": 66.512,
+                        "id": 1000000662620000,
+                        "start_offset": 66.262,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 66.804,
+                        "id": 1000000662620001,
+                        "start_offset": 66.513,
+                        "text": "need"
+                    },
+                    {
+                        "end_offset": 66.912,
+                        "id": 1000000662620002,
+                        "start_offset": 66.804,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 67.2,
+                        "id": 1000000662620003,
+                        "start_offset": 66.912,
+                        "text": "talk"
+                    },
+                    {
+                        "end_offset": 67.344,
+                        "id": 1000000662620004,
+                        "start_offset": 67.2,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 67.416,
+                        "id": 1000000662620005,
+                        "start_offset": 67.344,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 67.848,
+                        "id": 1000000662620006,
+                        "start_offset": 67.416,
+                        "text": "doctor"
+                    },
+                    {
+                        "end_offset": 67.956,
+                        "id": 1000000662620007,
+                        "start_offset": 67.848,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 68.1,
+                        "id": 1000000662620008,
+                        "start_offset": 67.956,
+                        "text": "will"
+                    },
+                    {
+                        "end_offset": 68.64,
+                        "id": 1000000662620009,
+                        "start_offset": 68.1,
+                        "text": "transfer"
+                    },
+                    {
+                        "end_offset": 68.712,
+                        "id": 1000000662620010,
+                        "start_offset": 68.64,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 69.144,
+                        "id": 1000000662620011,
+                        "start_offset": 68.712,
+                        "text": "now"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 74.472,
+                "participant_id": 0,
+                "start_offset": 70.112,
+                "text": "how is this related to my insurance claim maybe i should speak to a supervisor",
+                "words": [
+                    {
+                        "end_offset": 70.325,
+                        "id": 1010000701120000,
+                        "start_offset": 70.112,
+                        "text": "how"
+                    },
+                    {
+                        "end_offset": 70.476,
+                        "id": 1010000701120001,
+                        "start_offset": 70.328,
+                        "text": "is"
+                    },
+                    {
+                        "end_offset": 70.656,
+                        "id": 1010000701120002,
+                        "start_offset": 70.476,
+                        "text": "this"
+                    },
+                    {
+                        "end_offset": 71.088,
+                        "id": 1010000701120003,
+                        "start_offset": 70.656,
+                        "text": "related"
+                    },
+                    {
+                        "end_offset": 71.196,
+                        "id": 1010000701120004,
+                        "start_offset": 71.088,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 71.34,
+                        "id": 1010000701120005,
+                        "start_offset": 71.196,
+                        "text": "my"
+                    },
+                    {
+                        "end_offset": 71.88,
+                        "id": 1010000701120006,
+                        "start_offset": 71.34,
+                        "text": "insurance"
+                    },
+                    {
+                        "end_offset": 72.24,
+                        "id": 1010000701120007,
+                        "start_offset": 71.88,
+                        "text": "claim"
+                    },
+                    {
+                        "end_offset": 72.96,
+                        "id": 1010000701120008,
+                        "start_offset": 72.672,
+                        "text": "maybe"
+                    },
+                    {
+                        "end_offset": 73.032,
+                        "id": 1010000701120009,
+                        "start_offset": 72.96,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 73.212,
+                        "id": 1010000701120010,
+                        "start_offset": 73.032,
+                        "text": "should"
+                    },
+                    {
+                        "end_offset": 73.5,
+                        "id": 1010000701120011,
+                        "start_offset": 73.212,
+                        "text": "speak"
+                    },
+                    {
+                        "end_offset": 73.608,
+                        "id": 1010000701120012,
+                        "start_offset": 73.5,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 73.644,
+                        "id": 1010000701120013,
+                        "start_offset": 73.608,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 74.472,
+                        "id": 1010000701120014,
+                        "start_offset": 73.644,
+                        "text": "supervisor"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 79.26,
+                "participant_id": 9303,
+                "start_offset": 76.249,
+                "text": "i'm sorry there are no supervisors available due to the virus",
+                "words": [
+                    {
+                        "end_offset": 76.56,
+                        "id": 1000000762490000,
+                        "start_offset": 76.249,
+                        "text": "i'm"
+                    },
+                    {
+                        "end_offset": 76.848,
+                        "id": 1000000762490001,
+                        "start_offset": 76.56,
+                        "text": "sorry"
+                    },
+                    {
+                        "end_offset": 76.992,
+                        "id": 1000000762490002,
+                        "start_offset": 76.848,
+                        "text": "there"
+                    },
+                    {
+                        "end_offset": 77.1,
+                        "id": 1000000762490003,
+                        "start_offset": 76.992,
+                        "text": "are"
+                    },
+                    {
+                        "end_offset": 77.316,
+                        "id": 1000000762490004,
+                        "start_offset": 77.1,
+                        "text": "no"
+                    },
+                    {
+                        "end_offset": 78.0,
+                        "id": 1000000762490005,
+                        "start_offset": 77.316,
+                        "text": "supervisors"
+                    },
+                    {
+                        "end_offset": 78.396,
+                        "id": 1000000762490006,
+                        "start_offset": 78.0,
+                        "text": "available"
+                    },
+                    {
+                        "end_offset": 78.556,
+                        "id": 1000000762490007,
+                        "start_offset": 78.396,
+                        "text": "due"
+                    },
+                    {
+                        "end_offset": 78.642,
+                        "id": 1000000762490008,
+                        "start_offset": 78.557,
+                        "text": "to"
+                    },
+                    {
+                        "end_offset": 78.72,
+                        "id": 1000000762490009,
+                        "start_offset": 78.642,
+                        "text": "the"
+                    },
+                    {
+                        "end_offset": 79.26,
+                        "id": 1000000762490010,
+                        "start_offset": 78.72,
+                        "text": "virus"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 83.904,
+                "participant_id": 0,
+                "start_offset": 81.24,
+                "text": "can you please have someone call me back as soon as possible",
+                "words": [
+                    {
+                        "end_offset": 81.456,
+                        "id": 1010000812400000,
+                        "start_offset": 81.24,
+                        "text": "can"
+                    },
+                    {
+                        "end_offset": 81.528,
+                        "id": 1010000812400001,
+                        "start_offset": 81.456,
+                        "text": "you"
+                    },
+                    {
+                        "end_offset": 81.852,
+                        "id": 1010000812400002,
+                        "start_offset": 81.528,
+                        "text": "please"
+                    },
+                    {
+                        "end_offset": 81.96,
+                        "id": 1010000812400003,
+                        "start_offset": 81.852,
+                        "text": "have"
+                    },
+                    {
+                        "end_offset": 82.284,
+                        "id": 1010000812400004,
+                        "start_offset": 81.96,
+                        "text": "someone"
+                    },
+                    {
+                        "end_offset": 82.464,
+                        "id": 1010000812400005,
+                        "start_offset": 82.284,
+                        "text": "call"
+                    },
+                    {
+                        "end_offset": 82.608,
+                        "id": 1010000812400006,
+                        "start_offset": 82.464,
+                        "text": "me"
+                    },
+                    {
+                        "end_offset": 82.86,
+                        "id": 1010000812400007,
+                        "start_offset": 82.608,
+                        "text": "back"
+                    },
+                    {
+                        "end_offset": 83.004,
+                        "id": 1010000812400008,
+                        "start_offset": 82.86,
+                        "text": "as"
+                    },
+                    {
+                        "end_offset": 83.184,
+                        "id": 1010000812400009,
+                        "start_offset": 83.004,
+                        "text": "soon"
+                    },
+                    {
+                        "end_offset": 83.328,
+                        "id": 1010000812400010,
+                        "start_offset": 83.184,
+                        "text": "as"
+                    },
+                    {
+                        "end_offset": 83.904,
+                        "id": 1010000812400011,
+                        "start_offset": 83.328,
+                        "text": "possible"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 98.16,
+                "participant_id": 9303,
+                "start_offset": 88.512,
+                "text": "hi mr jones i'm the supervisor on duty i understand that you've been asking for a callback see we can get this issue resolved now so that won't be necessary",
+                "words": [
+                    {
+                        "end_offset": 88.692,
+                        "id": 1000000885120000,
+                        "start_offset": 88.512,
+                        "text": "hi"
+                    },
+                    {
+                        "end_offset": 88.974,
+                        "id": 1000000885120001,
+                        "start_offset": 88.692,
+                        "text": "mr"
+                    },
+                    {
+                        "end_offset": 89.375,
+                        "id": 1000000885120002,
+                        "start_offset": 88.974,
+                        "text": "jones"
+                    },
+                    {
+                        "end_offset": 89.812,
+                        "id": 1000000885120003,
+                        "start_offset": 89.578,
+                        "text": "i'm"
+                    },
+                    {
+                        "end_offset": 89.898,
+                        "id": 1000000885120004,
+                        "start_offset": 89.829,
+                        "text": "the"
+                    },
+                    {
+                        "end_offset": 90.528,
+                        "id": 1000000885120005,
+                        "start_offset": 89.914,
+                        "text": "supervisor"
+                    },
+                    {
+                        "end_offset": 90.672,
+                        "id": 1000000885120006,
+                        "start_offset": 90.528,
+                        "text": "on"
+                    },
+                    {
+                        "end_offset": 90.996,
+                        "id": 1000000885120007,
+                        "start_offset": 90.672,
+                        "text": "duty"
+                    },
+                    {
+                        "end_offset": 91.284,
+                        "id": 1000000885120008,
+                        "start_offset": 91.14,
+                        "text": "i"
+                    },
+                    {
+                        "end_offset": 91.86,
+                        "id": 1000000885120009,
+                        "start_offset": 91.284,
+                        "text": "understand"
+                    },
+                    {
+                        "end_offset": 92.004,
+                        "id": 1000000885120010,
+                        "start_offset": 91.86,
+                        "text": "that"
+                    },
+                    {
+                        "end_offset": 92.183,
+                        "id": 1000000885120011,
+                        "start_offset": 92.004,
+                        "text": "you've"
+                    },
+                    {
+                        "end_offset": 92.292,
+                        "id": 1000000885120012,
+                        "start_offset": 92.183,
+                        "text": "been"
+                    },
+                    {
+                        "end_offset": 92.652,
+                        "id": 1000000885120013,
+                        "start_offset": 92.292,
+                        "text": "asking"
+                    },
+                    {
+                        "end_offset": 92.868,
+                        "id": 1000000885120014,
+                        "start_offset": 92.652,
+                        "text": "for"
+                    },
+                    {
+                        "end_offset": 92.94,
+                        "id": 1000000885120015,
+                        "start_offset": 92.868,
+                        "text": "a"
+                    },
+                    {
+                        "end_offset": 93.444,
+                        "id": 1000000885120016,
+                        "start_offset": 92.945,
+                        "text": "callback"
+                    },
+                    {
+                        "end_offset": 94.306,
+                        "id": 1000000940340000,
+                        "start_offset": 94.034,
+                        "text": "see"
+                    },
+                    {
+                        "end_offset": 94.484,
+                        "id": 1000000940340001,
+                        "start_offset": 94.324,
+                        "text": "we"
+                    },
+                    {
+                        "end_offset": 94.592,
+                        "id": 1000000940340002,
+                        "start_offset": 94.484,
+                        "text": "can"
+                    },
+                    {
+                        "end_offset": 94.776,
+                        "id": 1000000940340003,
+                        "start_offset": 94.593,
+                        "text": "get"
+                    },
+                    {
+                        "end_offset": 94.956,
+                        "id": 1000000940340004,
+                        "start_offset": 94.776,
+                        "text": "this"
+                    },
+                    {
+                        "end_offset": 95.352,
+                        "id": 1000000940340005,
+                        "start_offset": 94.992,
+                        "text": "issue"
+                    },
+                    {
+                        "end_offset": 96.035,
+                        "id": 1000000940340006,
+                        "start_offset": 95.352,
+                        "text": "resolved"
+                    },
+                    {
+                        "end_offset": 96.684,
+                        "id": 1000000940340007,
+                        "start_offset": 96.252,
+                        "text": "now"
+                    },
+                    {
+                        "end_offset": 97.004,
+                        "id": 1000000940340008,
+                        "start_offset": 96.684,
+                        "text": "so"
+                    },
+                    {
+                        "end_offset": 97.272,
+                        "id": 1000000940340009,
+                        "start_offset": 97.08,
+                        "text": "that"
+                    },
+                    {
+                        "end_offset": 97.428,
+                        "id": 1000000940340010,
+                        "start_offset": 97.272,
+                        "text": "won't"
+                    },
+                    {
+                        "end_offset": 97.512,
+                        "id": 1000000940340011,
+                        "start_offset": 97.428,
+                        "text": "be"
+                    },
+                    {
+                        "end_offset": 98.16,
+                        "id": 1000000940340012,
+                        "start_offset": 97.512,
+                        "text": "necessary"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 103.128,
+                "participant_id": 0,
+                "start_offset": 99.42,
+                "text": "fantastic truly outstanding customer service",
+                "words": [
+                    {
+                        "end_offset": 100.248,
+                        "id": 1010000994200000,
+                        "start_offset": 99.42,
+                        "text": "fantastic"
+                    },
+                    {
+                        "end_offset": 101.436,
+                        "id": 1010001008170000,
+                        "start_offset": 100.817,
+                        "text": "truly"
+                    },
+                    {
+                        "end_offset": 102.12,
+                        "id": 1010001008170001,
+                        "start_offset": 101.436,
+                        "text": "outstanding"
+                    },
+                    {
+                        "end_offset": 102.588,
+                        "id": 1010001008170002,
+                        "start_offset": 102.12,
+                        "text": "customer"
+                    },
+                    {
+                        "end_offset": 103.128,
+                        "id": 1010001008170003,
+                        "start_offset": 102.588,
+                        "text": "service"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 113.388,
+                "participant_id": 9303,
+                "start_offset": 112.632,
+                "text": "okay thanks",
+                "words": [
+                    {
+                        "end_offset": 112.992,
+                        "id": 1000001126320000,
+                        "start_offset": 112.632,
+                        "text": "okay"
+                    },
+                    {
+                        "end_offset": 113.388,
+                        "id": 1000001126320001,
+                        "start_offset": 113.064,
+                        "text": "thanks"
+                    }
+                ]
+            },
+            {
+                "conversation_id": 94080927741820,
+                "end_offset": 115.691,
+                "participant_id": 0,
+                "start_offset": 114.294,
+                "text": "all right cool thanks bye",
+                "words": [
+                    {
+                        "end_offset": 114.351,
+                        "id": 1010001142940000,
+                        "start_offset": 114.294,
+                        "text": "all"
+                    },
+                    {
+                        "end_offset": 114.682,
+                        "id": 1010001142940001,
+                        "start_offset": 114.453,
+                        "text": "right"
+                    },
+                    {
+                        "end_offset": 114.972,
+                        "id": 1010001142940002,
+                        "start_offset": 114.682,
+                        "text": "cool"
+                    },
+                    {
+                        "end_offset": 115.27,
+                        "id": 1010001142940003,
+                        "start_offset": 115.059,
+                        "text": "thanks"
+                    },
+                    {
+                        "end_offset": 115.691,
+                        "id": 1010001142940004,
+                        "start_offset": 115.511,
+                        "text": "bye"
+                    }
+                ]
+            }
+        ]
+    }
+}
